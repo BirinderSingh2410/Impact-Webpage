@@ -1,0 +1,78 @@
+.getstarted{
+    display: flex;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.getstarted_content{
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+    margin-left: 65%;
+}
+.getstarted_content > h2{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.getstarted_content > p{
+    font-size: 15px;
+    line-height: 22px;
+}
+.getstarted_content > button{
+    width: 155px;
+    border: none;
+    border-radius: 6px;
+    height: 50px;
+    background-color: #f85a40;
+    color: white;
+    font-size: 18px;
+}
+.getstarted_content > button:hover{
+    cursor: pointer;
+}
+.getstarted_contentlist > li{
+    font-size: 15px;
+    line-height: 27px;
+}
+.getstarted_video{
+    width: 60%;
+    height: 100%;
+    z-index: 2;
+    margin-left: -90%;
+}
+.getstarted_video > a > img{
+    width:80%;
+    height:80%;
+    filter: brightness(0.5);
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+    margin-top:5vh;
+}
+.play{
+    color: white;
+    position: absolute;
+    font-size: 77px;
+    z-index: 1;
+    margin-left: -28%;
+    margin-top: 12%;
+}
+@media screen and (max-width:990px){
+    .getstarted{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .getstarted_content{
+        width: 75%;
+    height: 100%;
+    z-index: 1;
+    margin: auto;
+    }
+    .getstarted_video{
+        width: 75%;
+        height: 100%;
+        z-index: 2;
+        margin: auto;
+    }
+}

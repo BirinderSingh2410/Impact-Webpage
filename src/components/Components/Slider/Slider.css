@@ -1,0 +1,68 @@
+.sliderbox{
+    background-color: rgb(237, 248, 247);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.sliderbox_slider{
+    display: flex;
+    width:100%;
+    margin-top: 5vh;
+    height:70%;
+    position: relative;
+}
+.icon{
+    margin-left: 40%;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.right{
+    margin-left: 85%;
+}
+.tab{
+    height: 100%;
+    width: 15%;
+    background-color: rgb(237, 248, 247);
+    z-index:4;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider{
+    display: flex;
+    z-index: 2;
+    height: 45vh;
+    margin-top: 8vh;
+    margin-right: -111vw;
+    width: 6000px;
+    animation: slidemovement 8s alternate-reverse 200ms infinite;
+}
+@keyframes slidemovement {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-35%);
+    }
+    100%{
+        transform: translateX(-68%)
+    }
+}
+
+.indication{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    padding-bottom: 10vh;
+}
+.indication > button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 1vw;
+    background-color: gray;
+}

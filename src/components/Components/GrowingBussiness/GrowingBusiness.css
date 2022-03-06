@@ -1,0 +1,65 @@
+.growingbox{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 14vh;
+}
+.growingbox > .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16vh;
+    width: 30%; 
+    margin-left: 9vw;
+}
+.growingbox > .container > h1{
+    font-size: 1.9em;
+}
+.growingbox > .container > p{
+    line-height: 26px;
+    font-size: 14px;
+}
+.growingbox > .container > .btn{
+    width: 140px;
+    height: 49px;
+    background-color: #f85a40;
+    color: white;
+    border: hidden;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top: 2vh;
+}
+.growingbox > .container> button:hover{ 
+    cursor: pointer;
+}
+.growingbox_image{
+    width:50%;
+}
+.growingbox_image > img{
+    width: 96%;
+    height: 64%;
+    margin-top: 17vh;
+    margin-left: 10vw;
+}
+@media screen and (max-width:990px){
+    .growingbox{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15vh;
+    }
+    .growingbox > .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 16vh;
+        width: 70%; 
+        margin: auto;
+    }
+    .growingbox_image{ 
+        width:100%;
+    }
+    .growingbox_image > img{
+        width: 80%;
+        height: 60%;
+        margin: auto;
+        margin-left: 10%;
+    }
+}

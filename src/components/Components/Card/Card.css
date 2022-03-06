@@ -1,0 +1,27 @@
+.slidercard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 10%;
+}
+.slidercard > span{
+    font-family: inherit;
+    font-size: 15px;
+    width: 430px;
+    margin-top: -1vh;
+    color: #aaaa;
+}
+.slidercard > p{
+    color:black;
+    font-family: serif;
+    font-style: italic;
+
+}
+.person{
+    width: 90px;
+    height: 90px;
+    border: 6px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 24px 8px #aaaa;
+}

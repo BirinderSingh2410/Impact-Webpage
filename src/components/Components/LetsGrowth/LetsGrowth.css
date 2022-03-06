@@ -1,0 +1,48 @@
+.growth_block{
+    width: 98%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 7vh;
+}
+.growth_block > .container{
+    color: white;
+    margin-top: 7vh;
+    font-size: 1em;
+    width: 36vw;
+    height: 58vh;
+    margin-left: 8%;
+    text-align: center;
+}
+.growth_block >.container > h1{
+    color: white;
+    font-size: 40px;
+    width:36vw;
+}
+.growth_block > .container > p{
+    color:rgba(228, 228, 228, 0.667);
+    font-size: 17px;
+    line-height: 4.5vh;
+}
+.pic_1{
+    margin-left: 1.5vw;
+}
+.pic_2{
+    margin-left: 6vw;
+}
+.growth_block > .container > .btn{
+    margin-top: 5vw;
+    width: 155px;
+    background-color: #f85a40;
+    height: 50px;
+    border-radius: 3px;
+    border: hidden;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+.growth_block > .container > .btn:hover{
+    cursor: pointer;
+    border:2px solid white;
+    background-color:#008374;;
+}

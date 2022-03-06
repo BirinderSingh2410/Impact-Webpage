@@ -1,0 +1,58 @@
+.featurebox{
+    background-color: #009080;
+    display: flex;
+    width:90%;
+    margin-left: 5%;
+    justify-content: space-evenly;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+    margin-top: 30vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.featurebox > .logobox{
+    display: flex;
+    width: 23%;
+}
+.featurebox > .logobox > .logo{
+    font-size: 52px;
+    margin-top: 2vh;
+}
+.featurebox > .logobox > .logobox_content{
+    display: flex;
+    margin-left: 2vw;
+    flex-direction: column;
+}
+.featurebox > .logobox > .logobox_content > h1{
+    font-size: 20px;
+}
+.featurebox > .logobox > .logobox_content > p{
+    font-size: 14px;
+    line-height: 25px;
+    color:rgba(238, 238, 238, 0.667);
+}
+@media screen and (max-width:990px){
+    .featurebox{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .featurebox > .logobox{
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .featurebox > .logobox > .logo{
+        margin-left: 2vw;
+    }
+    .featurebox > .logobox > .logobox_content > p{
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: -1vh;
+        color:rgba(238, 238, 238, 0.667);
+    }
+    
+}

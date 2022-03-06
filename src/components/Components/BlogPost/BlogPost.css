@@ -1,0 +1,27 @@
+.blogpost_heading{
+    text-align: center;
+    width: 44%;
+    margin-left: 28%;
+    margin-bottom: 14vh;
+}
+.blogpost_heading > h2{
+    font-size: 36px;
+}
+.blogpost_heading > p{
+    font-size: 15px;
+    line-height: 32px;
+    color:rgba(32, 32, 32, 0.667);
+}
+.blogpost_card{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100%;
+}
+@media screen and (max-width:770px){
+    .blogpost_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
