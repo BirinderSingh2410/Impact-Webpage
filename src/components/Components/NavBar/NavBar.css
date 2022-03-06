@@ -1,116 +1,14 @@
-.block{
-    width: 100%;
-    height: 21vh;
+.navbar{
+    width:100%;
     display: flex;
     justify-content: space-between;
     margin-top: 4vh;
 }
-.block_heading{
-    width: 10vw; 
-    margin-left: 10vw;
-    margin-top: 2vh;
-    font-weight: bold;
-    color: white;
-    font-size: 25px;
-}
-.block_navbar{
-    width: 60%;
-    display:flex;
-    margin-left: 17vw;
-}
-.block_navbar_list{
-    color: white;
-    list-style: none;
-    display: flex;
-    font-size: 15px;
-    justify-content:flex-start;
-}
-.content1{
-    width:8vw;
-    color:rgba(224, 224, 224, 0.667);
-    height: 2vh;
-}
-.content1:hover{
+.navbar_heading{
+    width:30%;
+    text-align: center;
     color:white;
-    cursor: pointer;
 }
-.content2{
-    width:11vw;
-    display: flex;
-    color:rgba(224, 224, 224, 0.667);
-}
-.content2:hover{ 
-    color:white;
-    cursor: pointer;
-}
-.dropdownicon{
-    font-size: 22px;
-}
-.dropdwon_menu{
-    background-color: white;
-    width: 10vw;
-    color: black;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin-left: -11vw;
-    margin-top: 2vw;
-    height: 23vh;
-    display: none;
-    box-shadow: 2px 2px 2px #aaaa;
-}
-.dropdwon_menu > li{
-    line-height: 48px;
-    width: 15vw;
-    margin-left: -2vw;
-}
-.content2:hover > .dropdwon_menu{
-
-    display: block;
-}
-.dropdown_menu2{
-    display: flex;
-}
-.dropdown_menu2_submenu{
-    width: 11vw;
-    margin-left: 12vw;
-    background-color: white;
-    z-index: 1;
-    position: absolute;
-    padding-right: 2vw;
-    list-style: none;
-    display: none;
-}
-.dropdown_menu2:hover > .dropdown_menu2_submenu{
-    display: block;
-}
-.dropdown_menu2_submenu > li{
-    color: black;
-}
-.dropdown_menu2_submenu > li{ 
-    width:10vw;
-    font-size: 13px;
-}
-.submenuicon{
-    font-size: 10px;
-    margin-left: 41px;
-    margin-top: 20px;
-}
-.dropdwon_menu > li:hover{
-    color:#f85a40;
-    cursor: pointer;
-}
-.dropdown_menu2_submenu > li:hover{
-    
-    color:#f85a40;
-    cursor: pointer;
-}
-@media screen and (max-width:990px){
-    .block_heading{
-        z-index: 1;   
-    }
-    .block_navbar{
-        z-index:0;
-        display: none;
-    }
+.navbar_heading > h1{
+    font-size: 30px;
 }
