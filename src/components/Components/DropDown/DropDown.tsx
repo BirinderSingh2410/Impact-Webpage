@@ -15,7 +15,7 @@ export const DropDown = () => {
               <li className='dropdown_menulist'>Menu One</li>
               <li className='dropdown_menu2'> 
                 Menu Two <FaGreaterThan className='submenuicon' />
-                <ul className='dropdown_menu2_submenu'>
+                <ul className='dropdown_menu2_submenu'> 
                   <li >Sub Menu One</li>
                   <li>Sub Menu Two</li>
                   <li> Sub Menu Three</li>

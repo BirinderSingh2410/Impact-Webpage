@@ -4,7 +4,7 @@ interface CardProp{
     image:string,
     heading:string,
     caption:string,
-    content:string
+    content:string 
 }
 export const Card : React.FC<CardProp> =({image,caption,content,heading}) :JSX.Element=> {
   return (

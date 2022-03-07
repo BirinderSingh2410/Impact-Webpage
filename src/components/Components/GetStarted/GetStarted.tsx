@@ -1,10 +1,19 @@
 import React from 'react'
-
+import { useState } from 'react';
 import Pic from './pics/hero-min.jpg';
 import './GetStarted.css'
 import { RiPlayCircleFill} from "react-icons/ri";
+import { IoCloseOutline } from 'react-icons/io5';
 
 export const GetStarted = () => {
+
+  const[play,setPlay] = useState(false);
+  function playvideo(){
+    setPlay(!play);
+  }
+  function closevideo(){
+    setPlay(!play);
+  }
   return (
     <div className='getstarted'>
         <div className='getstarted_content'>
@@ -20,9 +29,17 @@ export const GetStarted = () => {
             <button>Learn More</button>
         </div>
         <div className='getstarted_video'>
-            <a href="https://www.youtube.com/watch?v=KI2lsdXJQ40" ><img src={Pic} alt="Image"/></a>
+            <img src={Pic} alt="Image" onClick={playvideo}/>
             <RiPlayCircleFill className='play'/>
         </div>
+      {
+        play ? 
+        <div className='iframe'>
+        <div className='backopac'></div>
+        <IoCloseOutline className='iframeclose' onClick={(closevideo)}/>
+        <iframe className='iframevideo' src="https://www.youtube.com/embed/KI2lsdXJQ40"></iframe>
+        </div> : <div></div>
+      }
     </div>
   )
 }

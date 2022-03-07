@@ -3,7 +3,8 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 10%; 
+    width: 80vw;
 }
 .slidercard > span{
     font-family: inherit;

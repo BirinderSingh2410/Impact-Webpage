@@ -71,7 +71,7 @@
 .dropdown_menu > li:hover{
     color: #f85a40;
     cursor: pointer;
-}
+} 
 .dropdown_menu2:hover > .dropdown_menu2_submenu{
     display: block;
 }
@@ -82,5 +82,39 @@
 @media screen and (max-width:990px){
     .dropdown{
         display: none;
+    }
+    .dropdown_list{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: start;
+    }
+    .dropdown_list > li{
+        color: black;
+        margin-bottom: 3vh;
+    }
+    .submenuicon{
+        font-size: 12px;
+    }
+    .dropdown_menu{
+        position: static;
+        display: block;
+        height: 100%;
+    }
+    .dropdown_menu > li{
+        font-size: 14px;
+        text-align: left;
+        width: 15vw;
+    }
+    .dropdown_menu2_submenu{
+        position: static;
+        height: 100%;
+        margin-left:0%;
+    }
+    .dropdown_menu2_submenu > li{
+        width: 12vw;
+        font-size: 14px;
+        margin-left: -10%;
+        text-align: left; 
     }
 }

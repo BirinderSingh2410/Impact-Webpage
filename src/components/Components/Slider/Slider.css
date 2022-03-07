@@ -1,68 +1,59 @@
 .sliderbox{
-    background-color: rgb(237, 248, 247);
-    width:100%;
     display: flex;
     flex-direction: column;
+    background-color: rgb(236, 236, 236);
 }
 .sliderbox_slider{
     display: flex;
-    width:100%;
-    margin-top: 5vh;
-    height:70%;
+    height:80%;
     position: relative;
+    margin-top: 4vh;
 }
-.icon{
-    margin-left: 40%;
-}
-.icon:hover{
-    cursor: pointer;
-}
-.right{
-    margin-left: 85%;
-}
-.tab{
-    height: 100%;
-    width: 15%;
-    background-color: rgb(237, 248, 247);
-    z-index:4;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .slider{
-    display: flex;
-    z-index: 2;
-    height: 45vh;
-    margin-top: 8vh;
-    margin-right: -111vw;
-    width: 6000px;
-    animation: slidemovement 8s alternate-reverse 200ms infinite;
+    display:flex;
+    z-index: 0;
+    animation:slidermove 10s alternate  3s infinite;
 }
-@keyframes slidemovement {
+@keyframes slidermove {
     0%{
         transform: translateX(0%);
     }
     50%{
-        transform: translateX(-35%);
+        transform:translateX(-33%);
     }
     100%{
-        transform: translateX(-68%)
+        transform: translateX(-67%);
     }
 }
+.tab{
+    position: absolute;
+    z-index: 1;
+    width:10%;
+    height:100%;
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+}
 
+.right{
+    margin-left: 90%;
+}
+.icon{
+    font-size: 20px;
+    margin-top: 100%;
+}
 .indication{
+    margin-top: 4vh;
+    width:100%;
     display: flex;
-    justify-content: center;
-    margin-top: 5vh;
-    padding-bottom: 10vh;
+    justify-content:start;
+    margin-bottom: 4vh;
+    margin-left: 47%;
 }
 .indication > button{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: none;
+    width:15px;
+    height:15px;
+    border-radius: 80%;
     margin-left: 1vw;
-    background-color: gray;
+    border: none;
+    background-color: white;
 }

@@ -10,6 +10,7 @@ import { GetStarted } from './components/Components/GetStarted/GetStarted';
 import { Slider } from './components/Components/Slider/Slider';
 import { BlogPost } from './components/Components/BlogPost/BlogPost';
 import { AboutImpact } from './components/Components/AboutImpact/AboutImpact';
+import { MobileNavBar } from './components/Components/MobileNavBar/MobileNavBar';
 
 function App() {
   return (

@@ -1,0 +1,60 @@
+.mobilenavbar{
+    display: none;
+}
+@media screen and (max-width:990px){
+    .mobilenavbar{
+        display: block;
+        width:30%;
+        color: white;
+        font-size: 35px;
+        margin-left: 70%;
+        z-index: 2;
+        margin-top: 4vh;
+        position: relative;
+        height: 100%;
+    }
+    .bars{
+        margin-left:30%;
+    }
+    .mobilenavbar:hover{
+        cursor: pointer;
+    }
+    .ontoscreen{
+        position:fixed;
+        width: 40%;
+        height: 100%;
+        background-color: white;
+        z-index: 1;
+        margin: auto;
+        margin-top:-16vh;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        animation: fromright 0.5s linear;
+    }
+    .ontoscreen > .cross{
+        color:black;
+        font-size: 35px;
+        margin-top:4vh;
+        font-weight: lighter;
+        margin-left: 70%;
+    }
+    @keyframes fromright {
+        from{
+            transform: translateX(100%);
+
+        }
+        to{
+            transform: translateX(-50%);
+        }
+    }
+    .ontoscreen > .dropdown{
+        display: block;
+        height: 60%;
+        width: 80%;
+        margin-top: 2vh;
+        display: flex;
+    }
+ 
+}
