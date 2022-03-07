@@ -14,6 +14,10 @@
     z-index: 0;
     animation:slidermove 10s alternate  3s infinite;
 }
+
+.slider:hover{
+    animation:none;
+}
 @keyframes slidermove {
     0%{
         transform: translateX(0%);
@@ -29,7 +33,8 @@
     position: absolute;
     z-index: 1;
     width:10%;
-    height:100%;
+    margin-top:-4vh;
+    height:53vh;
     text-align: center;
     background-color: rgb(236, 236, 236);
 }
@@ -45,7 +50,7 @@
     margin-top: 4vh;
     width:100%;
     display: flex;
-    justify-content:start;
+    justify-content:flex-start;
     margin-bottom: 4vh;
     margin-left: 47%;
 }

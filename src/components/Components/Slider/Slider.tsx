@@ -20,6 +20,7 @@ export const Slider = () => {
                     <Card image={Person2} heading="Maria Jones" caption="Customer" content="“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”"/>
                     <Card image={Person3} heading="Maria Jones" caption="Customer" content="“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”"/>
             </div>
+            
             <div className='right tab'> 
                 <FaGreaterThan className='icon'/>
             </div>
