@@ -8,13 +8,31 @@ import {FaLessThan} from "react-icons/fa";
 import { Card } from '../Card/Card';
 
 export const Carousel = () => {
-    const[autoscroll,setAutoscroll] = useState(false)
+    const[autoscroll,setAutoscroll] = useState(true)
     const[next,setNext] = useState(0);
     const[pre,setPre] = useState(0);
     const[idname,setidname] = useState('');
     const[btn1,setbtn1] = useState('changeback');
     const[btn2,setbtn2] = useState('');
     const[btn3,setbtn3] = useState('');
+    let interval:any;
+
+    function abc(){
+        setAutoscroll(false);
+        clearInterval(interval);
+    }
+    useEffect(
+        () => {
+            if(autoscroll){
+                interval = setInterval(nextSlide, 2000);
+            }
+            else{
+                debugger
+                clearInterval(interval);
+            }
+        },
+        []
+      );
 
     function card1(){
         setidname('firstcard');
@@ -35,30 +53,38 @@ export const Carousel = () => {
             setbtn1('');
     }
 
-    function preSlide(){
-        setNext(next === -66 ? 0  : next - 33);
-        if(next === -66){
-            card3();
-        }
-        else if(next === -33){
-            card2();
-        }
-        else{
-            card1();
-        }
+    function nextSlide(){
+        setNext((next)=>{
+            const newNext =  next === -66 ? 0  : next - 33;
+            if(next === -66){
+                card3();
+            }
+            else if(next === -33){
+                card2();
+            }
+            else{
+                card1();
+            }
+            return newNext;
+        })
+        
     }
 
-    function nextSlide(){
-        setPre(pre === 0 ? -66 : pre + 33);
-        if(pre === -66){
-           card3();
-        }
-        else if(pre === -33){
-            card2();
-        }
-        else{
-            card1();
-        }
+    function preSlide(){
+        setPre((pre) => {
+            const newPre =  pre === 0 ? -66 : pre + 33;
+            if(newPre === -66){
+                card3();
+             }
+             else if(newPre === -33){
+                 card2();
+             }
+             else{
+                 card1();
+             }
+             return newPre;
+        });
+       
     }
 
     function btnclick1(){
@@ -75,10 +101,10 @@ export const Carousel = () => {
 
     
     return (
-        <div className='sliderbox'  >
+        <div className='sliderbox'  onMouseOver={abc}>
             <div className='sliderbox_slider'>
                 <div className='left tab'>
-                    <FaLessThan className='icon' onClick={nextSlide} /> 
+                    <FaLessThan className='icon' onClick={preSlide} /> 
                 </div>
                 <div className='slider' id={idname} >
                         <Card image={Person1} heading="Maria Jones" caption="Customer" content="“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”"/>
@@ -87,7 +113,7 @@ export const Carousel = () => {
                 </div>
                 
                 <div className='right tab'> 
-                    <FaGreaterThan className='icon' onClick={preSlide}/>
+                    <FaGreaterThan className='icon' onClick={nextSlide}/>
                 </div>
             </div> 
             <div className='indication'>
