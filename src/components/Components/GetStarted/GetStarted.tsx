@@ -32,7 +32,7 @@ export const GetStarted = () => {
       </div>
       <div className='getstarted_video'>
         <img src={Pic} alt="Image" onClick={playvideo} />
-        <RiPlayCircleFill className='play' />
+        <RiPlayCircleFill className='play' onClick={playvideo}/>
       </div>
       {
         play ?

@@ -10,13 +10,30 @@
     margin-top: 4vh;
 }
 .slider{
-    display:flex;
+    display:flex; 
     z-index: 0;
-    animation:slidermove 10s alternate  3s infinite;
 }
 
+.icon:hover{
+    cursor: pointer;
+    color:#f85a40;
+}
+#thirdcard{
+    
+    transform: translateX(-66%);
+}
+#secondcard{
+    transform: translateX(-33%);
+}
 .slider:hover{
-    animation:none;
+    animation-play-state: paused;
+}
+#changeback{
+    background-color: #f85a40;
+}
+ 
+.indication > button:hover{
+    cursor: pointer;
 }
 @keyframes slidermove {
     0%{
