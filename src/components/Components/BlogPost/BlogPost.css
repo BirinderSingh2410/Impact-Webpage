@@ -1,3 +1,6 @@
+.blogpost{
+    margin-top: 4vh;
+}
 .blogpost_heading{
     text-align: center;
     width: 44%;
@@ -18,7 +21,7 @@
     justify-content:space-evenly;
     width: 100%;
 }
-@media screen and (max-width:770px){
+@media (max-width:770px){
     .blogpost_card{
         display: flex;
         flex-direction: column;

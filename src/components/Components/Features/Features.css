@@ -32,7 +32,7 @@
     line-height: 25px;
     color:rgba(238, 238, 238, 0.667);
 }
-@media screen and (max-width:990px){
+@media(max-width:990px){
     .featurebox{
         display: flex;
         flex-direction: column;

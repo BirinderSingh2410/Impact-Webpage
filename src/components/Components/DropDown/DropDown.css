@@ -85,7 +85,7 @@
     color: #f85a40;
     cursor: pointer;
 }
-@media screen and (max-width:990px){
+@media (max-width:990px){
     .dropdown{
         display: none;
     }

@@ -1,7 +1,7 @@
 .mobilenavbar{
     display: none;
 }
-@media screen and (max-width:990px){
+@media (max-width:990px){
     .mobilenavbar{
         display: block;
         width:30%;
