@@ -17,22 +17,6 @@ export const Carousel = () => {
     const[btn3,setbtn3] = useState('');
     let interval:any;
 
-    function abc(){
-        setAutoscroll(false);
-        clearInterval(interval);
-    }
-    useEffect(
-        () => {
-            if(autoscroll){
-                interval = setInterval(nextSlide, 2000);
-            }
-            else{
-                debugger
-                clearInterval(interval);
-            }
-        },
-        []
-      );
 
     function card1(){
         setidname('firstcard');
@@ -101,7 +85,7 @@ export const Carousel = () => {
 
     
     return (
-        <div className='sliderbox'  onMouseOver={abc}>
+        <div className='sliderbox'  >
             <div className='sliderbox_slider'>
                 <div className='left tab'>
                     <FaLessThan className='icon' onClick={preSlide} /> 

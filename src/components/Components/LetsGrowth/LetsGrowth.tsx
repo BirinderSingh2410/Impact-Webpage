@@ -3,7 +3,7 @@ import './LetsGrowth.css'
 import Pic1 from './pics/persons-group-1.png';
 import Pic2 from './pics/persons-group-2.png';
 import { Description } from '../Description/Description';
-
+ 
 export const LetsGrowth = () => {
   return (
     <div className='growth_block'>

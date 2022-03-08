@@ -1,48 +1,48 @@
 .growth_block{
-    width: 98%;
-    height: 40%;
     display: flex;
-    flex-direction: row;
-    margin-top: 7vh;
+    justify-content: space-evenly;
 }
 .growth_block > .container{
-    color: white;
-    margin-top: 7vh;
-    font-size: 1em;
-    width: 36vw;
-    height: 58vh;
-    margin-left: 8%;
+    width:50%;
+    margin-top:12vh;
     text-align: center;
-}
-.growth_block >.container > h1{
+    align-items: center;
+    display: flex;
     color: white;
+    flex-direction: column;
+}
+.growth_block > .container > h1{
+    width:70%;
     font-size: 40px;
-    width:36vw;
 }
-.growth_block > .container > p{
-    color:rgba(228, 228, 228, 0.667);
+.growth_block > .container >p{
+    width:70%;
     font-size: 17px;
-    line-height: 4.5vh;
 }
-.pic_1{
-    margin-left: 1.5vw;
-}
-.pic_2{
-    margin-left: 6vw;
-}
-.growth_block > .container > .btn{
-    margin-top: 5vw;
-    width: 155px;
-    background-color: #f85a40;
-    height: 50px;
-    border-radius: 3px;
-    border: hidden;
-    font-size: 17px;
-    font-weight: 500;
+.growth_block > .container > button{
+    margin-top: 4vh;
+    width:150px;
+    height:50px;
+    font-size: 18px;
     color: white;
+    border-radius: 8px;
+    border:none;
+    background-color: #f85a40;
 }
-.growth_block > .container > .btn:hover{
+.growth_block > .container > button:hover{
+    background-color: #008374;
+    border: 2px solid white;
     cursor: pointer;
-    border:2px solid white;
-    background-color:#008374;;
+}
+
+@media (max-width:850px){
+    .growth_block > .container{
+        width:70%;
+    }
+    .pic_1 {
+        display: none;
+    }
+    .pic_2{
+        display: none;
+    }
 }

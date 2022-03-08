@@ -84,3 +84,17 @@
     border: none;
     background-color: white;
 }
+@media (max-width:700){
+    #thirdcard{
+        transition:ease-out 1.5s;
+        transform: translateX(-88%);
+    }
+    #firstcard{
+        transition: ease-out 1.5s;
+        transform: translateX(0%);
+    }
+    #secondcard{
+        transition: ease-out 1.5s;
+        transform: translateX(-45%);
+    }
+}

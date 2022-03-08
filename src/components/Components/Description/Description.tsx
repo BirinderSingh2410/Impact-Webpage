@@ -3,7 +3,7 @@ import React from 'react'
 
 interface DescriptionProperty{
     heading:string,
-    content:string,
+    content:string, 
     button_content:string
 }  
 
