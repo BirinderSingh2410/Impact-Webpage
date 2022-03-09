@@ -34,7 +34,7 @@
     color: white;
     background-color: #f85a40;
     width: 25px;
-    border-radius: 50%;
+    border-radius: 50%; 
     height: 23px;
     padding-top: 7px;
     padding-left: 2px;
@@ -85,5 +85,12 @@
         flex-direction: column;
         margin-left: 0vw;
         margin-top: 3vh;
+    }
+}
+@media (max-width:530px){
+    .socialmedia > a{
+        padding-top: 6px;
+        padding-left: 1px;
+        
     }
 }

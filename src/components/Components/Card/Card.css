@@ -35,7 +35,7 @@
 @media (max-width:540px){
     .slidercard{
        width: 76vw;
-       margin-left: 3%;
+       margin-left: 1.5%;
    }   
    .slidercard > p{
        font-size:12px;

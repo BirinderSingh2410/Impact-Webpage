@@ -86,3 +86,8 @@
     border: none;
     background-color: white;
 }
+@media (max-width:540px){
+    .slider{
+        margin-left:2vw
+    }
+}

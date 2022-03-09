@@ -21,7 +21,7 @@ export const AboutImpact = () => {
             <a href="#"><GrFacebookOption /></a>
             <a href="#"><GrLinkedinOption /></a>
             <a href="#"><GrPinterest /></a>
-            <a href="#"><GrDribbble /></a>
+            <a href="#"><GrDribbble /></a> 
           </div>
         </div>
         <div className='aboutimpact_links'>
