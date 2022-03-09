@@ -43,7 +43,7 @@ export const DropDown = () => {
           <li className='dropdown_content1'>Home</li>
           <li className='dropdown_content2' > 
             Dropdown
-            <span className='dropdownicon' onClick={dropmenu}>{contentmenu}</span>
+            <div className='dropdownicon' onClick={dropmenu}>{contentmenu}</div>
              <ul className='dropdown_menu'  id={getclass}>
               <li className='dropdown_menulist'>Menu One</li>
               <li className='dropdown_menu2'> 

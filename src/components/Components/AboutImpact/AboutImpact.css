@@ -29,17 +29,18 @@
 }
 .socialmedia{
     display: flex;
-    justify-content: space-between;
 }
 .socialmedia > a{
     color: white;
     background-color: #f85a40;
-    width: 33px;
+    width: 25px;
     border-radius: 50%;
-    height: 30px;
-    padding-top: 0.5vh;
+    height: 23px;
+    padding-top: 7px;
+    padding-left: 2px;
     text-align: center;
-    font-size: 20px;
+    font-size: 14px;
+    margin-left: 3px;
 }
 .aboutimpact_heading > h3::after{
     content: '.';
