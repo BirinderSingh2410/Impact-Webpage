@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { DropDown } from '../DropDown/DropDown';
 
 export const MobileNavBar = () => {
-  const [click,setClick] = useState(false);
+  const [click,setClick] = useState(false); 
 
   function abc(){
     setClick(!click);

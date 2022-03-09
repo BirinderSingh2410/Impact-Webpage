@@ -34,7 +34,10 @@
 }
 @media (max-width:540px){
     .slidercard{
-       width: 86vw;
+       width: 76vw;
        margin-left: 3%;
    }   
+   .slidercard > p{
+       font-size:12px;
    }
+}
