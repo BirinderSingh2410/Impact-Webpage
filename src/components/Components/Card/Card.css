@@ -26,3 +26,15 @@
     border-radius: 50%;
     box-shadow: 0px 4px 24px 8px #aaaa;
 }
+@media (max-width:700px){
+ .slidercard{
+    width: 86vw;
+    margin-left: 3%;
+}   
+}
+@media (max-width:540px){
+    .slidercard{
+       width: 86vw;
+       margin-left: 3%;
+   }   
+   }

@@ -10,6 +10,6 @@ export const NavBar = () => {
       <MobileNavBar/> 
       <DropDown/>
     </div>
-  )
+  ) 
 }
 

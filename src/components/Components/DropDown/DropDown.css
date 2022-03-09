@@ -9,6 +9,9 @@
     list-style:none;
     justify-content: space-between;
 }
+.dropdown_content2{
+    width:8vw;
+}
 .dropdownicon{
     font-size: 14px;
     margin-left: 1vw;
@@ -21,14 +24,14 @@
 
 .dropdown_list > li{
     color: rgb(212, 212, 212);
-    font-size: 16px;
+    font-size: 16px; 
     position: relative;
 }
 .dropdown_menu {
     position: absolute;
     background-color: white;
     color: black;
-    width: 10vw;
+    width: 12vw;
     text-align: center;
     height: 20vh;
     list-style: none;
@@ -54,7 +57,8 @@
     background-color: white;
     width: 12vw;
     height: 20vh;
-    display: none;
+    margin-top: -4vh;
+    display:none;
     list-style: none;
     margin-left: 100%;
 }
@@ -81,6 +85,7 @@
 .dropdown_menu2:hover > .dropdown_menu2_submenu{
     display: block;
 }
+
 .dropdown_menu2_submenu > li:hover{
     color: #f85a40;
     cursor: pointer;

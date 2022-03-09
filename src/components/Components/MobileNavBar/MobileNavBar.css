@@ -58,3 +58,8 @@
     }
  
 }
+@media (max-width:650px){
+    .mobilenavbar{
+        margin-right: 10vw;
+    }
+}

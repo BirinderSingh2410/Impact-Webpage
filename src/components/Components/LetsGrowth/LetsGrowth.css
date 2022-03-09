@@ -18,6 +18,7 @@
 .growth_block > .container >p{
     width:70%;
     font-size: 17px;
+    line-height: 5vh;
 }
 .growth_block > .container > button{
     margin-top: 4vh;

@@ -41,7 +41,7 @@ export const DropDown = () => {
     <div className='dropdown'> 
         <ul className='dropdown_list'>
           <li className='dropdown_content1'>Home</li>
-          <li className='dropdown_content2' >
+          <li className='dropdown_content2' > 
             Dropdown
             <span className='dropdownicon' onClick={dropmenu}>{contentmenu}</span>
              <ul className='dropdown_menu'  id={getclass}>

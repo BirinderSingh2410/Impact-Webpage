@@ -9,6 +9,14 @@
     text-align: center;
     color:white;
 }
-.navbar_heading > h1{
+.navbar_heading > h1{ 
     font-size: 30px; 
+}
+@media (max-width:650px){
+    .navbar{
+        width: 90%;
+    }
+    .navbar_heading{
+        margin-left: 1vw;
+    }
 }

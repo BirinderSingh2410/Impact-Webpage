@@ -8,16 +8,24 @@ import {FaLessThan} from "react-icons/fa";
 import { Card } from '../Card/Card';
 
 export const Carousel = () => {
-    const[autoscroll,setAutoscroll] = useState(true)
+    const autoscroll = true;
     const[next,setNext] = useState(0);
     const[pre,setPre] = useState(0);
     const[idname,setidname] = useState('');
     const[btn1,setbtn1] = useState('changeback');
     const[btn2,setbtn2] = useState('');
     const[btn3,setbtn3] = useState('');
+
     let interval:any;
 
-
+    function auto(){
+        interval = setInterval(nextSlide,3000);
+    }
+   
+    useEffect(()=>{ 
+        if(autoscroll) auto();
+        return()=>{clearInterval(interval);}      
+    },[next])
     function card1(){
         setidname('firstcard');
             setbtn3('');
