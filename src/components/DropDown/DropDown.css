@@ -18,19 +18,20 @@
     font-size: 15px;
     margin-left: 0.5vw;
     width: 10px;
-    margin-top: -1.5vh;
+    margin-top: -1.2vh;
     height: 10px;
 }
 
 .submenuicon{
     font-size: 14px;
     font-weight: 600;
-    margin-left: 3vw;
+    margin-left: 3.5vw;
 }
 
 .dropdown_list > li{
     color: rgb(212, 212, 212);
     font-size: 14px; 
+    margin-right: 1.2vw;
     position: relative;
 }
 .dropdown_menu {
@@ -41,8 +42,8 @@
     text-align: center;
     height: 20vh;
     list-style: none;
-    display: none;
-    margin-top: 3vh;
+    display:none;
+    margin-top: 2.5vh;
     justify-content: space-between;
 }
 .dropdown_menu > li{
@@ -75,7 +76,8 @@
     margin-top: 3vh;
     color: black;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
+
 }
 .dropdown_list > li:hover{
     cursor: pointer;
